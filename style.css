@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --dark: #000;
+    --txt-clr: #fff;
+    --link-clr: #fff;
+    --sunflower: #b8d631;
+
+}
+a{
+    color: var(--dark);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+
+ul > li >a {
+    text-decoration: none;
+    color: var(--link-clr);
+}
+
+a:hover {
+    color: var(--sunflower);
+}
+
+.navbar {
+    background-color: var(--dark);
+    color: var(--txt-clr);
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar>ul>li {
+    font-size: 1.1rem;
+    padding-right: 20px;
+}
+.navbar>.navbar-heading > a{
+    text-decoration: none;
+    color: var(--sunflower);
+}
+.navbar>.navbar-heading {
+    padding-left: 50px;
+    color: var(--sunflower);
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    display: inline;
+
+}
+
+.con {
+    height: calc(100vh - 70px);
+    position: relative;
+}
+
+.container>span>h1 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-size: 4.5rem;
+    letter-spacing: 45px;
+    transform: translateY(-50%);
+}
+
+.creotove:hover {
+    color: var(--sunflower);
+}
+
+.o {
+    color: var(--sunflower);
+    display: inline;
+
+}
+
+
+.container .hide {
+    display: none;
+}
+
+.container:hover .show {
+    display: none;
+}
+
+.container:hover .hide {
+    display: inline;
+}
+
+/* --------------hero section over here---------------*/
+
+.about{
+    height: 100vh;
+    background-color: var(--dark);
+    color: var(--txt-clr);
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+ /* .about-container > .right > h1{
+    padding-left: 15px;
+    font-size: 2rem;
+    font-family: 'Comfortaa', cursive;
+}  */
+.demo-img{
+    text-transform: capitalize;
+    height: 400px;
+    width: 50vw;
+}
+.about-me{
+    font-size: 1rem;
+    padding: 10px 15px;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+/* --------------about section over here---------------*/
+
+.projects{
+    text-align: center;
+    height: 100%;
+    background-color: var(--dark);
+    padding-block: 50px;
+    color: var(--sunflower);
+}
+.projects > h1{
+    font-size: 3rem;
+    /* padding-left: 50px; */
+}
+.projects-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pro{
+    border: 1px solid var(--sunflower);
+    text-align: center;
+}
+.project-title{
+    padding-top: 15px ;
+}
+.projects > .projects-display > .pro{
+    margin: 15px;
+    position: relative;
+}
+.projects > .projects-display > .pro > img{
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 5px;
+}
+.hiden , .show{
+    object-fit: cover;
+}
+.projects > .projects-display > .pro .hiden {
+    /* position: absolute; */
+    display: none;
+}
+
+.projects > .projects-display > .pro:hover .show {
+    display: none;
+}
+
+.projects > .projects-display > .pro:hover .hiden {
+    opacity: 0.9;
+    display: inline;
+}
+.socials{
+    color: var(--dark);
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    /* left: 50%; */
+    font-size: 3rem;
+    transform: translateX(-50%);
+
+}
+.socials1{
+    left: 25%;
+    
+}
+.socials2{
+    left: 75%;
+}
+.socials:hover{
+    color: var(--sunflower);
+}
+
+.divider{
+    display: block;
+    height: 15px;
+    background-color: var(--txt-clr);
+    width: 100%;
+}
+
+/* -------------------- Project section over here -------------------- */
+
+.footer{
+    height: 3rem;
+    background-color: var(--sunflower);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer > .footer-content > .footer-socials > a > i{
+    padding: 0px 15px;
+    font-size: 2rem;
+    color: var(--dark);
+    transition: font-size  ease-in-out 0.5s;
+}
+.footer > .footer-content > .footer-socials > a > i:hover{
+    font-size: 3em;
+    
+}
+
+
+/* ------------- Contact Form ----------- */
+.contact{
+    height: calc(100vh - 70px);
+    font-size: 4rem;
+    
+}
+
+
+
+/* Media Queries*/
+@media only screen and (max-width: 600px) {
+    .navbar {
+        height: 90px;
+        width: 100%;
+    }
+    .con {
+        height: calc(100vh - 90px);
+        position: relative;
+    }
+    .container>span>h1 {
+        letter-spacing: 5px;
+    }
+
+    .navbar>.navbar-heading {
+        padding-left: 20px;
+        /* padding: 20px 0px; */
+    }
+    .about{
+        height: 100vh;
+    }
+    .about-container{
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left{
+        position: relative;
+       
+    }
+    .demo-img{
+       
+        background-color: var(--sunflower);
+        /* padding-block: 50px; */
+        height: 300px;
+        width: 100%;
+    }
+    .projects{
+        height: 100%;
+    }
+    .relative{
+        position: relative;
+        display: block;
+    }
+    .divider{
+        display: block;
+        position: absolute;
+        margin-top: 15px;
+        top: 25px;
+        height: 5px;
+        background-color: var(--txt-clr);
+        width: 100%;
+    }
+    
+}
