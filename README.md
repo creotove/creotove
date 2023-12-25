@@ -1,6 +1,5 @@
 # My Portfilio
-It is simple and minimalist designed Porfoio
-It is made of pure HTML and CSS only(I know javascript not Included)
+Created with React and Tailwind CSS
 
 - Live Preview
-https://creotove.github.io/creotove/
+https://altamas-resume.netlify.app
